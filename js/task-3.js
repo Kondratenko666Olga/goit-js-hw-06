@@ -12,21 +12,22 @@
 // value об'єкта, який викликає цей метод.
 
 class StringBuilder {
+  #value
 constructor(initialValue){
-  this._value = initialValue;
-};
-getValue() {
-  return this._value;
-};
-padEnd(str) {
-  this._value += str;
-};
-padStart(str) {
-  this._value = str + this._value;
-};
-padBoth(str) {
-  this._value = str + this._value + str;
-};
+  this.#value = initialValue;
+  };
+  getValue() {
+    return this.#value;
+  };
+  padEnd(str) {
+    this.#value += str;
+  };
+  padStart(str) {
+    this.#value = str + this.#value;
+  };
+  padBoth(str) {
+    this.#value = str + this.#value + str;
+  };
 }
 
 
